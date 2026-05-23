@@ -27,5 +27,6 @@ $router->get('/transportadoras/{id}',                           [TransportadoraC
 $router->get('/transportadoras/{id}/contatos',                  [ContatoController::class, 'index']);
 $router->get('/transportadoras/{id}/contatos/{cid}',            [ContatoController::class, 'show']);
 $router->post('/transportadoras/{id}/contatos',                  [ContatoController::class, 'store']);
+$router->delete('/transportadoras/{id}/contatos/{cid}',            [ContatoController::class, 'destroy']);
 
 $router->dispatch();
